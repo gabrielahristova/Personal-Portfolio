@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d3cbb96c36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JavaScript Student</p>
+                <h1>Hi, I'm <span>Gabriela</span><br>Hristova From Bulgaria</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/5F80BC9C-0144-4BA8-A144-B31377D6D1D2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="me">My name is Gabriela Hristova and I'm 18 years old. I started learning JavaScript in 2021, when I enrolled in my first course at SoftUni. Previously I had experience with HTML and CSS. I am also studying C# and MicrosoftSQL. You can see my projects on my GitHub in <a href="#contact" class="github">Contact Me</a> section.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link">Education</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>April 2021 - May 2021</span><br><a href="https://softuni.bg/certificates/details/106856/c6cd13c4" class="links">Programming Basics With JavaScript</a></li>
+                            <li><span>September 2021 - December 2021</span><br><a href="https://softuni.bg/certificates/details/119779/39634c4c" class="links">Programming Fundamentals With JavaScript</a></li>
+                            <li><span>January 2022 - February 2022</span><br><a href="https://softuni.bg/certificates/details/126740/da45f070" class="links">JavaScript Advanced</a></li>
+                            <li><span>March 2022 - April 2022</span><br><a href="" class="links">JavaScript Applications</a></li>
+                            <li><span>November 2021 - December 2021</span><br><a href="https://digital.softuni.bg/certificates/details/32748/9d15acd5" class="links">Marketing Basics</a></li>
+                            <li><span>September 2022 - October 2022</span><br><a href="https://financeacademy.bg/certificates/details/685/b2912dbd" class="links">Investment Basics</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> gabriela.hr1406@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +359 882754142</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100027468228610"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/gabriellaa_hvv/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriela-hristova-b947aa237/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/gabrielahristova"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/CV of Gabriela Hristova.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
